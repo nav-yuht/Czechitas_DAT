@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "a6ff6ab0-a556-4bf1-aeac-62593036a0d9",
+		"name": "CzechitasGitHub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"id": "74e79e70-b789-4cea-918d-2c20c8492438",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"shutup\",\r\n  \"email\": \"shutup@gmail.com\",\r\n  \"password\": \"123456Jmk\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{QATestURL}}api/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Nova role MA",
+			"id": "9d8060c3-0c89-49c9-934f-54d344558194",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"shutup\",\r\n  \"email\": \"a-a@a.com\",\r\n  \"password\": \"123456Jmk\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{QATestURL}}api/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "nový uživatel Parent",
+			"id": "c2e4a20b-6e28-4250-8355-d5655c19f602",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "16|XnTZ0ytqe5FEYFvt3xaa4O3Gk3tjqzpf1qu4OpBP"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{QATestURL}}api/users/current"
+			},
+			"response": []
+		},
+		{
+			"name": "Terms",
+			"id": "be11f53e-6db7-42c1-9136-0dc79cdd5db6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "29|Etp50skojw82CGvcXkhcrQG79Kuq10Y5hEa0FY6r"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"object\",\r\n  \"properties\": {\r\n    \"message\": {\r\n      \"type\": \"string\",\r\n      \"examples\": [\r\n        \"This action is unauthorized.\"\r\n      ]\r\n    }\r\n  },\r\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{QATestURL}}api/terms"
+			},
+			"response": []
+		},
+		{
+			"name": "Terms Copy",
+			"id": "0353d32d-eb65-434c-bbc8-657bc73a870d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "16|XnTZ0ytqe5FEYFvt3xaa4O3Gk3tjqzpf1qu4OpBP"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{QATestURL}}api/users/current"
+			},
+			"response": []
+		},
+		{
+			"name": "Terms Update",
+			"id": "6b0b38d5-f0d3-4335-9f9e-ff7b6bee6f4a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "29|Etp50skojw82CGvcXkhcrQG79Kuq10Y5hEa0FY6r"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"category_id\": 3,\r\n  \"flag\": null,\r\n  \"start\": \"2021-04-30\",\r\n  \"end\": \"2021-05-03\",\r\n  \"price\": 1600,\r\n  \"note_public\": \"# přidávám\",\r\n  \"note_private\": \"\",\r\n  \"created_at\": \"2021-02-22Z\",\r\n  \"updated_at\": \"2021-02-22\",\r\n  \"deleted_at\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{QATestURL}}api/terms/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Terms Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6711c952-aef5-435f-9f6a-ef2164ce458e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "8ee3e0cd-66d4-467d-8bea-230ffae66bfa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "32|n8TbiIRX43NeoFJbWjSOcSzbh0zMw5fkR9IjUgHK"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{QATestURL}}api/terms/termID"
+			},
+			"response": []
+		},
+		{
+			"name": "Terms Delete",
+			"id": "d3736900-36fa-40bc-a207-6942eb74f50b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "30|XOuQ4RVZl6ZmuFuASlvSwzBgmgU4fml776NBjW9B"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"category_id\": 3,\r\n  \"flag\": null,\r\n  \"start\": \"2021-04-30\",\r\n  \"end\": \"2021-05-03\",\r\n  \"price\": 1600,\r\n  \"note_public\": \"# přidávám\",\r\n  \"note_private\": \"\",\r\n  \"created_at\": \"2021-02-22Z\",\r\n  \"updated_at\": \"2021-02-22\",\r\n  \"deleted_at\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{QATestURL}}api/terms/1"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5205909b-8931-4777-abbf-40044463c893",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "96cba6d2-dc80-4c23-998a-eb0a914ffeea",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "QATestURL",
+			"value": "https://datop23-qa-kvintet-70b71f9fabc9.herokuapp.com/",
+			"type": "string"
+		}
+	]
+}
