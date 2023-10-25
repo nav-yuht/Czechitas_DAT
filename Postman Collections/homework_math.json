@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "834f13d1-c031-4c1d-b9fd-4a871c47130f",
+		"name": "Homework Math",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "kalkulace null",
+			"id": "0e3b95a3-8d3e-457b-9466-97c7ef8f3169",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace int(2)",
+			"id": "143dd1a5-1349-41a2-807b-24ebf8e944c9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace int(-a)",
+			"id": "dbba816c-62f7-46fd-b054-cb777c7585dd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace double",
+			"id": "eb56ff76-856e-4af2-98db-899a7b729464",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace BigInt",
+			"id": "b9510c53-38b0-49e4-a06b-e1738637124e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace double(-a)",
+			"id": "52a73d5e-6aeb-43f4-a881-43b2962862dc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace char",
+			"id": "c0ba4a8d-6ff4-4038-b5e7-be6b579d9838",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace string",
+			"id": "63cc80aa-a7d7-413e-adc7-8524d1f41020",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=--!?&b=dbdkjv",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "--!?"
+						},
+						{
+							"key": "b",
+							"value": "dbdkjv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace date",
+			"id": "fbc70ccb-b879-4f53-8ada-731180af526f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=21.11.2023&b=7.12.2012",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "21.11.2023"
+						},
+						{
+							"key": "b",
+							"value": "7.12.2012"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace percentage",
+			"id": "c0c2e709-12b8-4801-b743-374ed374b8fa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace BigInt(-a)",
+			"id": "cf43be44-19e7-4778-88ac-4ea0d2ddba72",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bc47a51b-a536-4172-ae98-8d7bf8900b59",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3d6d1932-bca7-4104-b91c-78fe6954f27e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURLmath",
+			"value": "https://czechitas-api.vercel.app/",
+			"type": "string"
+		}
+	]
+}
