@@ -15,7 +15,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"raw": "{{baseURLmath}}api/math/add?a=&b=",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -26,13 +26,11 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "5",
-							"type": "text"
+							"value": ""
 						},
 						{
 							"key": "b",
-							"value": "7",
-							"type": "text"
+							"value": ""
 						}
 					]
 				}
@@ -83,7 +81,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"raw": "{{baseURLmath}}api/math/add?a=5&b=-7",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -94,13 +92,11 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "5",
-							"type": "text"
+							"value": "5"
 						},
 						{
 							"key": "b",
-							"value": "7",
-							"type": "text"
+							"value": "-7"
 						}
 					]
 				}
@@ -117,7 +113,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"raw": "{{baseURLmath}}api/math/add?a=13.031654&b=12.098465",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -128,13 +124,11 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "5",
-							"type": "text"
+							"value": "13.031654"
 						},
 						{
 							"key": "b",
-							"value": "7",
-							"type": "text"
+							"value": "12.098465"
 						}
 					]
 				}
