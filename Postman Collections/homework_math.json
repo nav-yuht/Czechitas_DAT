@@ -72,6 +72,38 @@
 			"response": []
 		},
 		{
+			"name": "kalkulace int(2) Copy",
+			"id": "60c1257e-4bce-44b3-ae85-34a06958738a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=5 × 6&b=0 × 232",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "5 × 6"
+						},
+						{
+							"key": "b",
+							"value": "0 × 232"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "kalkulace int(-a)",
 			"id": "dbba816c-62f7-46fd-b054-cb777c7585dd",
 			"protocolProfileBehavior": {
