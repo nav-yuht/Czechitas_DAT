@@ -232,6 +232,38 @@
 			"response": []
 		},
 		{
+			"name": "kalkulace double Copy 3",
+			"id": "1e996570-fb99-40f7-ad69-0f133c4e74d5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=sin(2)&b=cos(784)",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "sin(2)"
+						},
+						{
+							"key": "b",
+							"value": "cos(784)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "kalkulace BigInt",
 			"id": "b9510c53-38b0-49e4-a06b-e1738637124e",
 			"protocolProfileBehavior": {
@@ -310,7 +342,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=\"123Czjhd\"&b=\"7\"",
+					"raw": "{{baseURLmath}}api/math/add?a=\"d\"&b=7",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -321,11 +353,11 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "\"123Czjhd\""
+							"value": "\"d\""
 						},
 						{
 							"key": "b",
-							"value": "\"7\""
+							"value": "7"
 						}
 					]
 				}
@@ -342,7 +374,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=\"--!?\"&b=\"dbdkjv\"",
+					"raw": "{{baseURLmath}}api/math/add?a=\"--!?g53\"&b=\"dbdkjv\"",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -353,7 +385,7 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "\"--!?\""
+							"value": "\"--!?g53\""
 						},
 						{
 							"key": "b",
