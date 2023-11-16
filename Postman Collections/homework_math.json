@@ -136,6 +136,102 @@
 			"response": []
 		},
 		{
+			"name": "kalkulace double(-a)",
+			"id": "52a73d5e-6aeb-43f4-a881-43b2962862dc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=-33.546987&b=-0.3535333",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "-33.546987"
+						},
+						{
+							"key": "b",
+							"value": "-0.3535333"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace double Copy",
+			"id": "ff3afaa0-903e-437d-b88d-d662f3f72a33",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=10:5&b=111:13",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "10:5"
+						},
+						{
+							"key": "b",
+							"value": "111:13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace double Copy 2",
+			"id": "43c60ba1-f797-418e-aae5-81a404d306e3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=√(910)&b=√(17)",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "√(910)"
+						},
+						{
+							"key": "b",
+							"value": "√(17)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "kalkulace BigInt",
 			"id": "b9510c53-38b0-49e4-a06b-e1738637124e",
 			"protocolProfileBehavior": {
@@ -173,8 +269,8 @@
 			"response": []
 		},
 		{
-			"name": "kalkulace double(-a)",
-			"id": "52a73d5e-6aeb-43f4-a881-43b2962862dc",
+			"name": "kalkulace BigInt(-a)",
+			"id": "cf43be44-19e7-4778-88ac-4ea0d2ddba72",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -182,7 +278,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=-33.546987&b=-0.3535333",
+					"raw": "{{baseURLmath}}api/math/add?a=-7868130699999999999999999999999999999999999999999999999999999999999999999&b=-00000000000.56666666666666666666",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -193,11 +289,11 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "-33.546987"
+							"value": "-7868130699999999999999999999999999999999999999999999999999999999999999999"
 						},
 						{
 							"key": "b",
-							"value": "-0.3535333"
+							"value": "-00000000000.56666666666666666666"
 						}
 					]
 				}
@@ -390,38 +486,6 @@
 						{
 							"key": "b",
 							"value": "20.1%"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "kalkulace BigInt(-a)",
-			"id": "cf43be44-19e7-4778-88ac-4ea0d2ddba72",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=-7868130699999999999999999999999999999999999999999999999999999999999999999&b=-00000000000.56666666666666666666",
-					"host": [
-						"{{baseURLmath}}api"
-					],
-					"path": [
-						"math",
-						"add"
-					],
-					"query": [
-						{
-							"key": "a",
-							"value": "-7868130699999999999999999999999999999999999999999999999999999999999999999"
-						},
-						{
-							"key": "b",
-							"value": "-00000000000.56666666666666666666"
 						}
 					]
 				}
