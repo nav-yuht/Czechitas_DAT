@@ -301,7 +301,7 @@
 			"response": []
 		},
 		{
-			"name": "kalkulace date invalid",
+			"name": "kalkulace time",
 			"id": "e8c573b9-33f1-4ade-b372-601a0344c3ae",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -310,7 +310,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=21.11.2023&b=7.12.2012",
+					"raw": "{{baseURLmath}}api/math/add?a=18:30&b=10:20",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -321,11 +321,43 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "21.11.2023"
+							"value": "18:30"
 						},
 						{
 							"key": "b",
-							"value": "7.12.2012"
+							"value": "10:20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kalkulace time invalid",
+			"id": "015d5356-76ff-4afd-abf8-34aa5396968f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURLmath}}api/math/add?a=18.30&b=10.20",
+					"host": [
+						"{{baseURLmath}}api"
+					],
+					"path": [
+						"math",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "18.30"
+						},
+						{
+							"key": "b",
+							"value": "10.20"
 						}
 					]
 				}
@@ -342,7 +374,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"raw": "{{baseURLmath}}api/math/add?a=50%&b=20.1%",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -353,13 +385,11 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "5",
-							"type": "text"
+							"value": "50%"
 						},
 						{
 							"key": "b",
-							"value": "7",
-							"type": "text"
+							"value": "20.1%"
 						}
 					]
 				}
@@ -376,7 +406,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURLmath}}api/math/add?a=5&b=7",
+					"raw": "{{baseURLmath}}api/math/add?a=-7868130699999999999999999999999999999999999999999999999999999999999999999&b=-00000000000.56666666666666666666",
 					"host": [
 						"{{baseURLmath}}api"
 					],
@@ -387,13 +417,11 @@
 					"query": [
 						{
 							"key": "a",
-							"value": "5",
-							"type": "text"
+							"value": "-7868130699999999999999999999999999999999999999999999999999999999999999999"
 						},
 						{
 							"key": "b",
-							"value": "7",
-							"type": "text"
+							"value": "-00000000000.56666666666666666666"
 						}
 					]
 				}
